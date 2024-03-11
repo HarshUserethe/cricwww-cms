@@ -21,23 +21,25 @@
     "description": {
       "type": "text"
     },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "blogid": {
       "type": "uid",
       "targetField": "Title"
     },
     "des": {
       "type": "blocks"
+    },
+    "imgUrl": {
+      "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
